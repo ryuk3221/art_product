@@ -1,0 +1,2414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-top">  
+        <nav class="header-top__nav">
+          <ul class="header-top__nav-list">
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#">О нас</a></li>
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#">Контакты</a></li>
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#">Видеоблог</a></li>
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#">Кейсы</a></li>
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#">Отзывы</a></li>
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#">info@art-active24.ru</a></li>
+          </ul>
+        </nav>
+        <div class="header-top__contacts">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3749 8.80191C6.74359 6.46285 10.3236 4.9208 12.1148 4.17576C17.2292 2.04851 18.2919 1.67899 18.9846 1.66679C19.1369 1.6641 19.4776 1.70186 19.6982 1.8809C19.8845 2.03208 19.9358 2.2363 19.9603 2.37963C19.9848 2.52297 20.0154 2.84949 19.9911 3.10462C19.714 6.01666 18.5147 13.0834 17.9046 16.3449C17.6465 17.725 17.1382 18.1877 16.6461 18.233C15.5766 18.3314 14.7645 17.5263 13.7287 16.8473C12.1078 15.7848 11.1921 15.1233 9.61879 14.0865C7.80053 12.8883 8.97923 12.2298 10.0154 11.1535C10.2866 10.8719 14.9987 6.58586 15.0899 6.19706C15.1013 6.14843 15.1119 5.96717 15.0042 5.87146C14.8965 5.77575 14.7376 5.80848 14.6229 5.83451C14.4604 5.87141 11.871 7.58287 6.85486 10.9689C6.11988 11.4736 5.45416 11.7195 4.8577 11.7066C4.20015 11.6924 2.93528 11.3348 1.99498 11.0292C0.84166 10.6543 -0.074973 10.4561 0.00484519 9.81938C0.0464194 9.48775 0.503103 9.14859 1.3749 8.80191Z" fill="#6C70AC"/>
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_2402_3623)">
+              <path d="M17.0732 2.91667C15.1916 1.04167 12.6829 0 10.0348 0C4.52961 0 0.0696853 4.44444 0.0696853 9.93056C0.0696853 11.6667 0.557491 13.4028 1.39373 14.8611L0 20L5.29617 18.6111C6.75958 19.375 8.36237 19.7917 10.0348 19.7917C15.5401 19.7917 20 15.3472 20 9.86111C19.9303 7.29167 18.9547 4.79167 17.0732 2.91667ZM14.8432 13.4722C14.6341 14.0278 13.6585 14.5833 13.1707 14.6528C12.7526 14.7222 12.1951 14.7222 11.6376 14.5833C11.2892 14.4444 10.8014 14.3056 10.2439 14.0278C7.73519 12.9861 6.13241 10.4861 5.99303 10.2778C5.85366 10.1389 4.94774 8.95833 4.94774 7.70833C4.94774 6.45833 5.57491 5.90278 5.78397 5.625C5.99303 5.34722 6.27178 5.34722 6.48084 5.34722C6.62021 5.34722 6.82927 5.34722 6.96864 5.34722C7.10801 5.34722 7.31707 5.27778 7.52613 5.76389C7.73519 6.25 8.22299 7.5 8.29268 7.56944C8.36237 7.70833 8.36237 7.84722 8.29268 7.98611C8.22299 8.125 8.15331 8.26389 8.01393 8.40278C7.87456 8.54167 7.73519 8.75 7.6655 8.81944C7.52613 8.95833 7.38676 9.09722 7.52613 9.30555C7.6655 9.58333 8.15331 10.3472 8.91986 11.0417C9.89547 11.875 10.662 12.1528 10.9408 12.2917C11.2195 12.4306 11.3589 12.3611 11.4983 12.2222C11.6376 12.0833 12.1254 11.5278 12.2648 11.25C12.4042 10.9722 12.6132 11.0417 12.8223 11.1111C13.0314 11.1806 14.2857 11.8056 14.4948 11.9444C14.7735 12.0833 14.9129 12.1528 14.9826 12.2222C15.0523 12.4306 15.0523 12.9167 14.8432 13.4722Z" fill="#6C70AC"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_2402_3623">
+              <rect width="20" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="header-top__contacts-phone" href="tel:+74950326759">+7 (495) 032-67-59</a>
+        </div>
+      </div>
+      <div class="header-mid">
+        <a class="header-mid__logo" href="#">
+          <img src="images/logo.png" alt="">
+        </a>
+        <button class="header-mid__btn">
+          <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+            <path d="M4 12.5H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 6.5H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 18.5H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L18 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Наши услуги
+        </button>
+        <button class="header-mid__btn--mobile">
+          <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+            <path d="M4 12.5H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 6.5H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 18.5H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L18 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Наши услуги
+        </button>
+        <button class="header-mid__search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+            <path d="M11.5098 19C15.928 19 19.5098 15.4183 19.5098 11C19.5098 6.58172 15.928 3 11.5098 3C7.09149 3 3.50977 6.58172 3.50977 11C3.50977 15.4183 7.09149 19 11.5098 19Z" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21.5102 21L17.1602 16.65" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="header-mid__input-box">
+          <input type="text" placeholder="Попробуйте умный поиск...">
+          <div class="search">
+            <div class="search__top">
+              <button class="search-close">
+                <img src="images/search-arrow.svg" alt="">
+              </button>
+              <input type="text">
+              <a class="search-btn" href="#">
+                  <img src="images/search-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="search__inner">
+              <div class="search__sidebar">
+                <div class="search__sidebar-title">Категории</div>
+                <a href="">Категории (<span>34</span>)</a>
+                <a href="">Категории (<span>1</span>)</a>
+                <a href="">Категории (<span>3</span>)</a>
+                <a href="">Категории (<span>17</span>)</a>
+              </div>
+              <div class="search__items-container">
+                <div class="search__items">
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                  <a class="search__item" href="#">
+                    <img src="images/search-img.jpg" alt="">
+                    <p>
+                      Шатер арочный гексагональный 14x16
+                    </p>
+                    <div>167 887 Р</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+            <path d="M11 19.5C15.4183 19.5 19 15.9183 19 11.5C19 7.08172 15.4183 3.5 11 3.5C6.58172 3.5 3 7.08172 3 11.5C3 15.9183 6.58172 19.5 11 19.5Z" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21.0004 21.5L16.6504 17.15" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <a class="header-mid__link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+            <path d="M22.0004 17.42V20.42C22.0016 20.6985 21.9445 20.9742 21.8329 21.2294C21.7214 21.4845 21.5577 21.7136 21.3525 21.9019C21.1473 22.0901 20.905 22.2335 20.6412 22.3227C20.3773 22.4119 20.0978 22.4451 19.8204 22.42C16.7433 22.0856 13.7874 21.0342 11.1904 19.35C8.77425 17.8147 6.72576 15.7662 5.19042 13.35C3.5004 10.7412 2.44866 7.771 2.12042 4.68001C2.09543 4.40347 2.1283 4.12477 2.21692 3.86163C2.30555 3.59849 2.44799 3.35669 2.63519 3.15163C2.82238 2.94656 3.05023 2.78271 3.30421 2.67053C3.5582 2.55834 3.83276 2.50027 4.11042 2.50001H7.11042C7.59573 2.49523 8.06621 2.66708 8.43418 2.98354C8.80215 3.29999 9.0425 3.73945 9.11042 4.22001C9.23704 5.18007 9.47187 6.12273 9.81042 7.03001C9.94497 7.38793 9.97408 7.77692 9.89433 8.15089C9.81457 8.52485 9.62928 8.86812 9.36042 9.14001L8.09042 10.41C9.51398 12.9136 11.5869 14.9865 14.0904 16.41L15.3604 15.14C15.6323 14.8711 15.9756 14.6859 16.3495 14.6061C16.7235 14.5263 17.1125 14.5555 17.4704 14.69C18.3777 15.0286 19.3204 15.2634 20.2804 15.39C20.7662 15.4585 21.2098 15.7032 21.527 16.0775C21.8441 16.4518 22.0126 16.9296 22.0004 17.42Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.0498 2.5C16.0881 2.71477 17.992 3.6188 19.4467 5.06258C20.9014 6.50636 21.8197 8.40341 22.0498 10.44" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.0498 6.5C15.0333 6.69394 15.9358 7.17903 16.6402 7.89231C17.3446 8.60559 17.8183 9.51413 17.9998 10.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Свяжитесь со мной 
+        </a>
+        <div class="header-top__contacts">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3749 8.80191C6.74359 6.46285 10.3236 4.9208 12.1148 4.17576C17.2292 2.04851 18.2919 1.67899 18.9846 1.66679C19.1369 1.6641 19.4776 1.70186 19.6982 1.8809C19.8845 2.03208 19.9358 2.2363 19.9603 2.37963C19.9848 2.52297 20.0154 2.84949 19.9911 3.10462C19.714 6.01666 18.5147 13.0834 17.9046 16.3449C17.6465 17.725 17.1382 18.1877 16.6461 18.233C15.5766 18.3314 14.7645 17.5263 13.7287 16.8473C12.1078 15.7848 11.1921 15.1233 9.61879 14.0865C7.80053 12.8883 8.97923 12.2298 10.0154 11.1535C10.2866 10.8719 14.9987 6.58586 15.0899 6.19706C15.1013 6.14843 15.1119 5.96717 15.0042 5.87146C14.8965 5.77575 14.7376 5.80848 14.6229 5.83451C14.4604 5.87141 11.871 7.58287 6.85486 10.9689C6.11988 11.4736 5.45416 11.7195 4.8577 11.7066C4.20015 11.6924 2.93528 11.3348 1.99498 11.0292C0.84166 10.6543 -0.074973 10.4561 0.00484519 9.81938C0.0464194 9.48775 0.503103 9.14859 1.3749 8.80191Z" fill="#6C70AC"/>
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_2402_3623)">
+              <path d="M17.0732 2.91667C15.1916 1.04167 12.6829 0 10.0348 0C4.52961 0 0.0696853 4.44444 0.0696853 9.93056C0.0696853 11.6667 0.557491 13.4028 1.39373 14.8611L0 20L5.29617 18.6111C6.75958 19.375 8.36237 19.7917 10.0348 19.7917C15.5401 19.7917 20 15.3472 20 9.86111C19.9303 7.29167 18.9547 4.79167 17.0732 2.91667ZM14.8432 13.4722C14.6341 14.0278 13.6585 14.5833 13.1707 14.6528C12.7526 14.7222 12.1951 14.7222 11.6376 14.5833C11.2892 14.4444 10.8014 14.3056 10.2439 14.0278C7.73519 12.9861 6.13241 10.4861 5.99303 10.2778C5.85366 10.1389 4.94774 8.95833 4.94774 7.70833C4.94774 6.45833 5.57491 5.90278 5.78397 5.625C5.99303 5.34722 6.27178 5.34722 6.48084 5.34722C6.62021 5.34722 6.82927 5.34722 6.96864 5.34722C7.10801 5.34722 7.31707 5.27778 7.52613 5.76389C7.73519 6.25 8.22299 7.5 8.29268 7.56944C8.36237 7.70833 8.36237 7.84722 8.29268 7.98611C8.22299 8.125 8.15331 8.26389 8.01393 8.40278C7.87456 8.54167 7.73519 8.75 7.6655 8.81944C7.52613 8.95833 7.38676 9.09722 7.52613 9.30555C7.6655 9.58333 8.15331 10.3472 8.91986 11.0417C9.89547 11.875 10.662 12.1528 10.9408 12.2917C11.2195 12.4306 11.3589 12.3611 11.4983 12.2222C11.6376 12.0833 12.1254 11.5278 12.2648 11.25C12.4042 10.9722 12.6132 11.0417 12.8223 11.1111C13.0314 11.1806 14.2857 11.8056 14.4948 11.9444C14.7735 12.0833 14.9129 12.1528 14.9826 12.2222C15.0523 12.4306 15.0523 12.9167 14.8432 13.4722Z" fill="#6C70AC"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_2402_3623">
+              <rect width="20" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="header-top__contacts-phone" href="tel:+74950326759">+7 (495) 032-67-59</a>
+        </div>
+        <button class="header-mid__mobile-menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M10 3H3V10H10V3Z" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 3H14V10H21V3Z" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 14H14V21H21V14Z" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 14H3V21H10V14Z" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="header-bot">
+        <div class="header-bot__inner">
+          <a class="header-bot__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <path d="M7.5 1.25L9.43125 5.1625L13.75 5.79375L10.625 8.8375L11.3625 13.1375L7.5 11.1063L3.6375 13.1375L4.375 8.8375L1.25 5.79375L5.56875 5.1625L7.5 1.25Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            23 февраля
+          </a>
+          <a class="header-bot__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <path d="M7.5 4.6875C7.5 4.13124 7.66495 3.58747 7.97399 3.12496C8.28303 2.66245 8.72229 2.30196 9.2362 2.08909C9.75012 1.87622 10.3156 1.82052 10.8612 1.92904C11.4068 2.03756 11.9079 2.30543 12.3012 2.69876C12.6946 3.0921 12.9624 3.59324 13.071 4.13881C13.1795 4.68438 13.1238 5.24988 12.9109 5.7638C12.698 6.27772 12.3376 6.71697 11.875 7.02601C11.4125 7.33505 10.8688 7.5 10.3125 7.5M7.5 4.6875C7.5 4.13124 7.33505 3.58747 7.02601 3.12496C6.71697 2.66245 6.27772 2.30196 5.7638 2.08909C5.24988 1.87622 4.68438 1.82052 4.13881 1.92904C3.59324 2.03756 3.0921 2.30543 2.69876 2.69876C2.30543 3.0921 2.03756 3.59324 1.92904 4.13881C1.82052 4.68438 1.87622 5.24988 2.08909 5.7638C2.30196 6.27772 2.66245 6.71697 3.12496 7.02601C3.58747 7.33505 4.13124 7.5 4.6875 7.5M7.5 4.6875V5.625M4.6875 7.5C4.13124 7.5 3.58747 7.66495 3.12496 7.97399C2.66245 8.28303 2.30196 8.72229 2.08909 9.2362C1.87622 9.75012 1.82052 10.3156 1.92904 10.8612C2.03756 11.4068 2.30543 11.9079 2.69876 12.3012C3.0921 12.6946 3.59324 12.9624 4.13881 13.071C4.68438 13.1795 5.24988 13.1238 5.7638 12.9109C6.27772 12.698 6.71697 12.3376 7.02601 11.875C7.33505 11.4125 7.5 10.8688 7.5 10.3125M4.6875 7.5H5.625M10.3125 7.5C10.8688 7.5 11.4125 7.66495 11.875 7.97399C12.3376 8.28303 12.698 8.72229 12.9109 9.2362C13.1238 9.75012 13.1795 10.3156 13.071 10.8612C12.9624 11.4068 12.6946 11.9079 12.3012 12.3012C11.9079 12.6946 11.4068 12.9624 10.8612 13.071C10.3156 13.1795 9.75012 13.1238 9.2362 12.9109C8.72229 12.698 8.28303 12.3376 7.97399 11.875C7.66495 11.4125 7.5 10.8688 7.5 10.3125M10.3125 7.5H9.375M7.5 10.3125V9.375" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.5 9.375C8.53553 9.375 9.375 8.53553 9.375 7.5C9.375 6.46447 8.53553 5.625 7.5 5.625C6.46447 5.625 5.625 6.46447 5.625 7.5C5.625 8.53553 6.46447 9.375 7.5 9.375Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 10L5.9375 9.0625" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.0625 5.9375L10 5" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 5L5.9375 5.9375" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.0625 9.0625L10 10" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            8 марта
+          </a>
+          <a class="header-bot__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <g clip-path="url(#clip0_2402_3330)">
+              <path d="M9.375 6.875H9.38125" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.875 9.375H6.88125" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 10H10.0063" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.25 10L13.75 13.75L10 1.25C7.9 1.8125 5.9875 2.91875 4.45 4.45C2.91644 5.9884 1.81308 7.90204 1.25 10Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10.625 3.75C6.69375 4.66875 4.73125 6.95625 3.75 10.625" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_2402_3330">
+              <rect width="15" height="15" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+            Кейтеринг
+          </a>
+          <a class="header-bot__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <g clip-path="url(#clip0_2402_3338)">
+              <path d="M11.25 6.875V3.75C11.25 3.41848 11.1183 3.10054 10.8839 2.86612C10.6495 2.6317 10.3315 2.5 10 2.5V2.5C9.66848 2.5 9.35054 2.6317 9.11612 2.86612C8.8817 3.10054 8.75 3.41848 8.75 3.75V3.75" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.75 6.25V2.5C8.75 2.16848 8.6183 1.85054 8.38388 1.61612C8.14946 1.3817 7.83152 1.25 7.5 1.25C7.16848 1.25 6.85054 1.3817 6.61612 1.61612C6.3817 1.85054 6.25 2.16848 6.25 2.5V3.75" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.25 6.5625V3.75C6.25 3.41848 6.1183 3.10054 5.88388 2.86612C5.64946 2.6317 5.33152 2.5 5 2.5V2.5C4.66848 2.5 4.35054 2.6317 4.11612 2.86612C3.8817 3.10054 3.75 3.41848 3.75 3.75V8.75" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11.2501 5C11.2501 4.66848 11.3818 4.35054 11.6162 4.11612C11.8506 3.8817 12.1685 3.75 12.5001 3.75C12.8316 3.75 13.1495 3.8817 13.3839 4.11612C13.6184 4.35054 13.7501 4.66848 13.7501 5V8.75C13.7501 10.0761 13.2233 11.3479 12.2856 12.2855C11.3479 13.2232 10.0761 13.75 8.75006 13.75H7.50006C5.75006 13.75 4.68756 13.2125 3.75631 12.2875L1.50631 10.0375C1.29127 9.79934 1.17606 9.4876 1.18452 9.16684C1.19298 8.84607 1.32447 8.54084 1.55176 8.31435C1.77906 8.08786 2.08475 7.95745 2.40555 7.95012C2.72634 7.9428 3.03767 8.05912 3.27506 8.275L4.37506 9.375" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_2402_3338">
+              <rect width="15" height="15" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+            Мастер-классы
+          </a>
+          <a class="header-bot__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <path d="M9.0625 2.5H5.9375L4.375 4.375H2.5C2.16848 4.375 1.85054 4.5067 1.61612 4.74112C1.3817 4.97554 1.25 5.29348 1.25 5.625V11.25C1.25 11.5815 1.3817 11.8995 1.61612 12.1339C1.85054 12.3683 2.16848 12.5 2.5 12.5H12.5C12.8315 12.5 13.1495 12.3683 13.3839 12.1339C13.6183 11.8995 13.75 11.5815 13.75 11.25V5.625C13.75 5.29348 13.6183 4.97554 13.3839 4.74112C13.1495 4.5067 12.8315 4.375 12.5 4.375H10.625L9.0625 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.5 10C8.53553 10 9.375 9.16053 9.375 8.125C9.375 7.08947 8.53553 6.25 7.5 6.25C6.46447 6.25 5.625 7.08947 5.625 8.125C5.625 9.16053 6.46447 10 7.5 10Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Фотозоны
+          </a>
+          <a class="header-bot__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <path d="M11.875 1.875H3.125C2.43464 1.875 1.875 2.43464 1.875 3.125V11.875C1.875 12.5654 2.43464 13.125 3.125 13.125H11.875C12.5654 13.125 13.125 12.5654 13.125 11.875V3.125C13.125 2.43464 12.5654 1.875 11.875 1.875Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 5H10.0063" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 5H5.00625" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 10H5.00625" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 10H10.0063" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.5 7.5H7.50625" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Фан казино
+          </a> 
+          <a class="header-bot__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <path d="M5 13.75H10" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.5 6.875V13.75" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11.875 1.875L7.5 6.875L3.125 1.875H11.875Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Выездной бар
+          </a> 
+          <a class="header-bot__link" href="#">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <path d="M1.875 5.625L7.5 1.25L13.125 5.625V12.5C13.125 12.8315 12.9933 13.1495 12.7589 13.3839C12.5245 13.6183 12.2065 13.75 11.875 13.75H3.125C2.79348 13.75 2.47554 13.6183 2.24112 13.3839C2.0067 13.1495 1.875 12.8315 1.875 12.5V5.625Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.625 13.75V7.5H9.375V13.75" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Площадка для мероприятий
+          </a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="drawer-menu">
+      <div class="container">
+        <div class="drawer-menu__content">
+          <div class="drawer-menu__tabs-wrapper">
+            <div class="drawer-menu__tabs">
+              <div class="drawer-menu__tab-item" id="attrakcion">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M3.74992 13.75C2.49992 14.8 2.08325 17.9167 2.08325 17.9167C2.08325 17.9167 5.19992 17.5 6.24992 16.25C6.84159 15.55 6.83325 14.475 6.17492 13.825C5.85101 13.5159 5.42433 13.3372 4.97677 13.3234C4.52922 13.3095 4.09232 13.4615 3.74992 13.75V13.75Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 12.5L7.5 9.99998C7.94345 8.84951 8.50184 7.7467 9.16667 6.70832C10.1377 5.1558 11.4897 3.87752 13.0942 2.99506C14.6986 2.11259 16.5022 1.65529 18.3333 1.66665C18.3333 3.93332 17.6833 7.91665 13.3333 10.8333C12.2807 11.4989 11.164 12.0573 10 12.5V12.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.49992 10H3.33325C3.33325 10 3.79159 7.475 4.99992 6.66666C6.34992 5.76666 9.16659 6.66666 9.16659 6.66666" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 12.5V16.6666C10 16.6666 12.525 16.2083 13.3333 15C14.2333 13.65 13.3333 10.8333 13.3333 10.8333" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="fan-casino">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Фан казино</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="fotozoni">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Фотозоны</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="catering">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Кейтеринг</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="shatr">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Шатры</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="sceny">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Сцены и подиумы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="obogrevateli">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Обогреватели</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="mebel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Мебель</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="teambuild">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Тимбилдинг</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="vecherinki">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Тематические вечеринки</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="master">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Мастер-классы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="catering-one">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Всё для Кейтеринга</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="personal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Персонал</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="posuda">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Посуда</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="kviz">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Квизы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="tekstil">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Текстиль</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="decor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Декор</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="oborud">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Тех. оборудование</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Инфо</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="shatr-one">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Подборки Шатров</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Инфо</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tab-item" id="shatr-one">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 6.66669H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 6.66669H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66675 13.3333H6.67508" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.3333 13.3333H13.3416" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Подборки Шатров</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="drawer-menu__tabcontent-wrapper">
+            <div class="drawer-menu__tabcontent" data-tabContent="attrakcion">
+              <div class="drawer-menu__tabcontent-title">Аттракционы</div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content1">
+                <span>Игровое оборудование</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content2">
+                <span>Аренда VP аттракционов</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content3">
+                <span>Выездной тир</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content4">
+                <span>Вело-аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content5">
+                <span>Советская вечеринка</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content6">
+                <span>Кулинарное казино</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content7">
+                <span>Гангстерские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content8">
+                <span>Родео аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content9">
+                <span>Игровые столы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content10">
+                <span>Механические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content11">
+                <span>Космические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content12">
+                <span>Детские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item1-content13">
+                <span>Батуты</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="drawer-menu__tabcontent" data-tabContent="fan-casino">
+              <div class="drawer-menu__tabcontent-title">Фан казино </div>
+              <div class="drawer-menu__tabcontent-item" id="item2_content1">
+                <span>Игровое оборудование</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item2_content2">
+                <span>Аренда VP аттракционов</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item2_content3">
+                <span>Выездной тир</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item2_content4">
+                <span>Вело-аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+             
+              <a class="drawer-menu__tabcontent-item" href="#">
+                <span>Советская вечеринка</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="drawer-menu__tabcontent-item" href="#">
+                <span>Кулинарное казино</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="drawer-menu__tabcontent-item" href="#">
+                <span>Гангстерские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="drawer-menu__tabcontent-item" href="#">
+                <span>Родео аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="drawer-menu__tabcontent-item" href="#">
+                <span>Игровые столы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="drawer-menu__tabcontent-item" href="#">
+                <span>Механические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="drawer-menu__tabcontent-item" href="#">
+                <span>Космические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+            <div class="drawer-menu__tabcontent" data-tabContent="fotozoni">
+              <div class="drawer-menu__tabcontent-title">Фотозоны</div>
+              <div class="drawer-menu__tabcontent-item" id="item3">
+                <span>Выездной тир</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item4">
+                <span>Вело-аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item5">
+                <span>Советская вечеринка</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item6">
+                <span>Кулинарное казино</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item7">
+                <span>Гангстерские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item8">
+                <span>Родео аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item9">
+                <span>Игровые столы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item10">
+                <span>Механические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item11">
+                <span>Космические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item12">
+                <span>Детские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="drawer-menu__tabcontent" data-tabContent="catering">
+              <div class="drawer-menu__tabcontent-title">Кейтеринг</div>
+              <div class="drawer-menu__tabcontent-item" id="item1">
+                <span>Игровое оборудование</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item2">
+                <span>Аренда VP аттракционов</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item3">
+                <span>Выездной тир</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item4">
+                <span>Вело-аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item5">
+                <span>Советская вечеринка</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item6">
+                <span>Кулинарное казино</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item7">
+                <span>Гангстерские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item8">
+                <span>Родео аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item9">
+                <span>Игровые столы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item10">
+                <span>Механические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item11">
+                <span>Космические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item12">
+                <span>Детские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item13">
+                <span>Батуты</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="drawer-menu__tabcontent" data-tabContent="shatr">
+              <div class="drawer-menu__tabcontent-title">Шатры</div>
+              <div class="drawer-menu__tabcontent-item" id="item1">
+                <span>Игровое оборудование</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item2">
+                <span>Аренда VP аттракционов</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item3">
+                <span>Выездной тир</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item4">
+                <span>Вело-аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item5">
+                <span>Советская вечеринка</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item6">
+                <span>Кулинарное казино</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item7">
+                <span>Гангстерские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item8">
+                <span>Родео аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item9">
+                <span>Игровые столы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item10">
+                <span>Механические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item11">
+                <span>Космические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="drawer-menu__tabcontent" data-tabContent="sceny">
+              <div class="drawer-menu__tabcontent-title">Сцены и подиумы</div>
+              <div class="drawer-menu__tabcontent-item" id="item3">
+                <span>Выездной тир</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item4">
+                <span>Вело-аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item5">
+                <span>Советская вечеринка</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item6">
+                <span>Кулинарное казино</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item7">
+                <span>Гангстерские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item8">
+                <span>Родео аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item9">
+                <span>Игровые столы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item10">
+                <span>Механические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item11">
+                <span>Космические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-menu__tabcontent-item" id="item12">
+                <span>Детские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="drawer-menu__sub-tabcontent-wrapper">
+            <div class="drawer-menu__sub-tabcontent sub-tabcontent" data-subTabContent="item1-content1">
+              <div class="sub-tabcontent__title">Игровое оборудование</div>
+              <a class="sub-tabcontent__link" href="#">Ссылка 1</a>
+              <a class="sub-tabcontent__link" href="#">Ссылка 2</a>
+              <a class="sub-tabcontent__link" href="#">Спасите</a>
+            </div>
+            <div class="drawer-menu__sub-tabcontent sub-tabcontent" data-subTabContent="item1-content2">
+              <div class="sub-tabcontent__title">Аренда VP аттракционов</div>
+              <a class="sub-tabcontent__link" href="#">Ссылка 1</a>
+              <a class="sub-tabcontent__link" href="#">Помогите</a>
+              <a class="sub-tabcontent__link" href="#">Спасите</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-mobile">
+      <div class="drawer-mobile__tabs-wrapper">
+        <div class="drawer-mobile__tabs-head">
+          <span>Наши услуги</span>
+          <button class="drawer-mobile__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 6L18 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="drawer-mobile__tabs-parent">
+          <div class="drawer-mobile__tabs">
+            <div class="drawer-mobile__tab" data-tabMobile="attrakcion">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M3.74967 13.75C2.49967 14.8 2.08301 17.9167 2.08301 17.9167C2.08301 17.9167 5.19967 17.5 6.24967 16.25C6.84134 15.55 6.83301 14.475 6.17467 13.825C5.85076 13.5158 5.42409 13.3372 4.97653 13.3233C4.52897 13.3095 4.09207 13.4614 3.74967 13.75V13.75Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12.5L7.5 10C7.94345 8.84954 8.50184 7.74673 9.16667 6.70835C10.1377 5.15584 11.4897 3.87755 13.0942 2.99509C14.6986 2.11262 16.5022 1.65532 18.3333 1.66668C18.3333 3.93335 17.6833 7.91668 13.3333 10.8333C12.2807 11.4989 11.164 12.0573 10 12.5V12.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.49967 10H3.33301C3.33301 10 3.79134 7.475 4.99967 6.66666C6.34967 5.76666 9.16634 6.66666 9.16634 6.66666" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12.5V16.6667C10 16.6667 12.525 16.2083 13.3333 15C14.2333 13.65 13.3333 10.8333 13.3333 10.8333" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Аттракционы</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="drawer-mobile__tab" data-tabMobile="fan-casino">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.333 6.66669H13.3413" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.66699 6.66669H6.67533" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.66699 13.3333H6.67533" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.333 13.3333H13.3413" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Фан казино</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="drawer-mobile__tab" data-tabMobile="fotozoni">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12.0837 3.33331H7.91699L5.83366 5.83331H3.33366C2.89163 5.83331 2.46771 6.00891 2.15515 6.32147C1.84259 6.63403 1.66699 7.05795 1.66699 7.49998V15C1.66699 15.442 1.84259 15.8659 2.15515 16.1785C2.46771 16.4911 2.89163 16.6666 3.33366 16.6666H16.667C17.109 16.6666 17.5329 16.4911 17.8455 16.1785C18.1581 15.8659 18.3337 15.442 18.3337 15V7.49998C18.3337 7.05795 18.1581 6.63403 17.8455 6.32147C17.5329 6.00891 17.109 5.83331 16.667 5.83331H14.167L12.0837 3.33331Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 13.3333C11.3807 13.3333 12.5 12.214 12.5 10.8333C12.5 9.4526 11.3807 8.33331 10 8.33331C8.61929 8.33331 7.5 9.4526 7.5 10.8333C7.5 12.214 8.61929 13.3333 10 13.3333Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Фотозоны</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="drawer-mobile__tab">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M3.74967 13.75C2.49967 14.8 2.08301 17.9167 2.08301 17.9167C2.08301 17.9167 5.19967 17.5 6.24967 16.25C6.84134 15.55 6.83301 14.475 6.17467 13.825C5.85076 13.5158 5.42409 13.3372 4.97653 13.3233C4.52897 13.3095 4.09207 13.4614 3.74967 13.75V13.75Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12.5L7.5 10C7.94345 8.84954 8.50184 7.74673 9.16667 6.70835C10.1377 5.15584 11.4897 3.87755 13.0942 2.99509C14.6986 2.11262 16.5022 1.65532 18.3333 1.66668C18.3333 3.93335 17.6833 7.91668 13.3333 10.8333C12.2807 11.4989 11.164 12.0573 10 12.5V12.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.49967 10H3.33301C3.33301 10 3.79134 7.475 4.99967 6.66666C6.34967 5.76666 9.16634 6.66666 9.16634 6.66666" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12.5V16.6667C10 16.6667 12.525 16.2083 13.3333 15C14.2333 13.65 13.3333 10.8333 13.3333 10.8333" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Аттракционы</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="drawer-mobile__tab">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.333 6.66669H13.3413" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.66699 6.66669H6.67533" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.66699 13.3333H6.67533" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.333 13.3333H13.3413" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Фан казино</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="drawer-mobile__tab">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12.0837 3.33331H7.91699L5.83366 5.83331H3.33366C2.89163 5.83331 2.46771 6.00891 2.15515 6.32147C1.84259 6.63403 1.66699 7.05795 1.66699 7.49998V15C1.66699 15.442 1.84259 15.8659 2.15515 16.1785C2.46771 16.4911 2.89163 16.6666 3.33366 16.6666H16.667C17.109 16.6666 17.5329 16.4911 17.8455 16.1785C18.1581 15.8659 18.3337 15.442 18.3337 15V7.49998C18.3337 7.05795 18.1581 6.63403 17.8455 6.32147C17.5329 6.00891 17.109 5.83331 16.667 5.83331H14.167L12.0837 3.33331Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 13.3333C11.3807 13.3333 12.5 12.214 12.5 10.8333C12.5 9.4526 11.3807 8.33331 10 8.33331C8.61929 8.33331 7.5 9.4526 7.5 10.8333C7.5 12.214 8.61929 13.3333 10 13.3333Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Фотозоны</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="drawer-mobile__tab">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M3.74967 13.75C2.49967 14.8 2.08301 17.9167 2.08301 17.9167C2.08301 17.9167 5.19967 17.5 6.24967 16.25C6.84134 15.55 6.83301 14.475 6.17467 13.825C5.85076 13.5158 5.42409 13.3372 4.97653 13.3233C4.52897 13.3095 4.09207 13.4614 3.74967 13.75V13.75Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12.5L7.5 10C7.94345 8.84954 8.50184 7.74673 9.16667 6.70835C10.1377 5.15584 11.4897 3.87755 13.0942 2.99509C14.6986 2.11262 16.5022 1.65532 18.3333 1.66668C18.3333 3.93335 17.6833 7.91668 13.3333 10.8333C12.2807 11.4989 11.164 12.0573 10 12.5V12.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.49967 10H3.33301C3.33301 10 3.79134 7.475 4.99967 6.66666C6.34967 5.76666 9.16634 6.66666 9.16634 6.66666" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12.5V16.6667C10 16.6667 12.525 16.2083 13.3333 15C14.2333 13.65 13.3333 10.8333 13.3333 10.8333" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Аттракционы</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="drawer-mobile__tab">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.333 6.66669H13.3413" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.66699 6.66669H6.67533" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.66699 13.3333H6.67533" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.333 13.3333H13.3413" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 10H10.0083" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Фан казино</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="drawer-mobile__tab">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12.0837 3.33331H7.91699L5.83366 5.83331H3.33366C2.89163 5.83331 2.46771 6.00891 2.15515 6.32147C1.84259 6.63403 1.66699 7.05795 1.66699 7.49998V15C1.66699 15.442 1.84259 15.8659 2.15515 16.1785C2.46771 16.4911 2.89163 16.6666 3.33366 16.6666H16.667C17.109 16.6666 17.5329 16.4911 17.8455 16.1785C18.1581 15.8659 18.3337 15.442 18.3337 15V7.49998C18.3337 7.05795 18.1581 6.63403 17.8455 6.32147C17.5329 6.00891 17.109 5.83331 16.667 5.83331H14.167L12.0837 3.33331Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 13.3333C11.3807 13.3333 12.5 12.214 12.5 10.8333C12.5 9.4526 11.3807 8.33331 10 8.33331C8.61929 8.33331 7.5 9.4526 7.5 10.8333C7.5 12.214 8.61929 13.3333 10 13.3333Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Фотозоны</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="drawer-mobile__tabs-content-box">
+        <div class="drawer-mobile__tabs-content-wrapper" data-tabMobileContent="attrakcion">
+          <div class="drawer-mobile__tabs-content-head">
+            <button class="drawer-mobile__tabs-content-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <span>Аттракционы</span>
+            <button class="drawer-mobile__tabs-content-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="drawer-mobile__tabs-content-items--wrapper">
+            <div class="drawer-mobile__tabs-content-items">         
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item1">
+                <span>Игровое оборудование</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item2">
+                <span>Аренда VP аттракционов</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item3">
+                <span>Выездной тир </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item4">
+                <span>Выездной тир</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item5">
+                <span>Вело-аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item6">
+                <span>Советская вечеринка</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item7">
+                <span>Кулинарное казино</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item8">
+                <span>Гангстерские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item9">
+                <span>Родео аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item10">
+                <span>Игровые столы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item11">
+                <span>Механические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item12">
+                <span>Космические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item13">
+                <span>Детские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item14">
+                <span>Батуты</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item1">
+                <span>Игровое оборудование</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item2">
+                <span>Аренда VP аттракционов</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item3">
+                <span>Выездной тир </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item1">
+                <span>Игровое оборудование</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item2">
+                <span>Аренда VP аттракционов</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="attrakcion_item3">
+                <span>Выездной тир </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawer-mobile__tabs-content-wrapper" data-tabMobileContent="fan-casino">
+          <div class="drawer-mobile__tabs-content-head">
+            <button class="drawer-mobile__tabs-content-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <span>Фан Казино</span>
+            <button class="drawer-mobile__tabs-content-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="drawer-mobile__tabs-content-items--wrapper">
+            <div class="drawer-mobile__tabs-content-items">
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item1">
+                <span>Игровое оборудование</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item2">
+                <span>Аренда VP аттракционов</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item3">
+                <span>Выездной тир </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item4">
+                <span>Выездной тир</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item5">
+                <span>Вело-аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item6">
+                <span>Советская вечеринка</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item7">
+                <span>Кулинарное казино</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item8">
+                <span>Гангстерские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item9">
+                <span>Родео аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item10">
+                <span>Игровые столы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item11">
+                <span>Механические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item12">
+                <span>Космические аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item13">
+                <span>Детские аттракционы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="drawer-mobile__tabs-content-item" data-subTabMobile="fan-casino_item14">
+                <span>Батуты</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="drawer-mobile__tabs-subcontent-box">
+        <div class="drawer-mobile__tabs-subcontent" data-drawerlinks="attrakcion_item1">
+          <div class="drawer-mobile__tabs-subcontent-head">
+            <button class="tabs-subcontent-head__btn-back">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <span>Игровое оборудование</span>
+            <div class="tabs-subcontent-head__btn-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="drawer-mobile__links-wrapper">
+            <div class="drawer-mobile__links">
+              <a class="drawer-mobile__link" href="#">
+                Ссылка 1 
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="drawer-mobile__link" href="#">
+                Ссылка 2
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="drawer-mobile__link" href="#">
+                Ссылка 3
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="drawer-mobile__link" href="#">
+                Ссылка 4
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <div class="mobile-nav__head">
+        <button class="mobile-nav__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L18 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-nav__content">
+        <div class="mobile-nav__links">
+          <a class="mobile-nav__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M13.3337 17.5V15.8333C13.3337 14.9493 12.9825 14.1014 12.3573 13.4763C11.7322 12.8512 10.8844 12.5 10.0003 12.5H5.00033C4.11627 12.5 3.26842 12.8512 2.6433 13.4763C2.01818 14.1014 1.66699 14.9493 1.66699 15.8333V17.5" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.50033 9.16667C9.34127 9.16667 10.8337 7.67428 10.8337 5.83333C10.8337 3.99238 9.34127 2.5 7.50033 2.5C5.65938 2.5 4.16699 3.99238 4.16699 5.83333C4.16699 7.67428 5.65938 9.16667 7.50033 9.16667Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.333 17.5V15.8333C18.3325 15.0948 18.0866 14.3773 17.6341 13.7936C17.1817 13.2099 16.5481 12.793 15.833 12.6083" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.333 2.60834C14.05 2.79192 14.6855 3.20892 15.1394 3.7936C15.5932 4.37827 15.8395 5.09736 15.8395 5.8375C15.8395 6.57765 15.5932 7.29674 15.1394 7.88141C14.6855 8.46609 14.05 8.88309 13.333 9.06667" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Наша команда
+          </a>
+          <a class="mobile-nav__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M16.6663 8.33335C16.6663 13.3334 9.99967 18.3334 9.99967 18.3334C9.99967 18.3334 3.33301 13.3334 3.33301 8.33335C3.33301 6.56524 4.03539 4.86955 5.28563 3.61931C6.53587 2.36907 8.23156 1.66669 9.99967 1.66669C11.7678 1.66669 13.4635 2.36907 14.7137 3.61931C15.964 4.86955 16.6663 6.56524 16.6663 8.33335V8.33335Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 10.8333C11.3807 10.8333 12.5 9.71402 12.5 8.33331C12.5 6.9526 11.3807 5.83331 10 5.83331C8.61929 5.83331 7.5 6.9526 7.5 8.33331C7.5 9.71402 8.61929 10.8333 10 10.8333Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Контакты
+          </a>
+          <a class="mobile-nav__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M6.66667 14.1666H16.6667C17.1087 14.1666 17.5326 13.9911 17.8452 13.6785C18.1577 13.3659 18.3333 12.942 18.3333 12.5V7.49998C18.3333 7.05795 18.1577 6.63403 17.8452 6.32147C17.5326 6.00891 17.1087 5.83331 16.6667 5.83331H13.3917C13.1172 5.83189 12.8472 5.76269 12.6059 5.63185C12.3646 5.50101 12.1593 5.31258 12.0083 5.08331L11.325 4.08331C11.174 3.85404 10.9687 3.66562 10.7274 3.53478C10.4861 3.40394 10.2162 3.33473 9.94167 3.33331H6.66667C6.22464 3.33331 5.80072 3.50891 5.48816 3.82147C5.17559 4.13403 5 4.55795 5 4.99998V12.5C5 13.4166 5.75 14.1666 6.66667 14.1666Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.66699 6.66669V15.8334C1.66699 16.75 2.41699 17.5 3.33366 17.5H15.0003" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Кейсы
+          </a>
+          <a class="mobile-nav__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_2511_332)">
+              <path d="M9.16699 3.33331H3.33366C2.89163 3.33331 2.46771 3.50891 2.15515 3.82147C1.84259 4.13403 1.66699 4.55795 1.66699 4.99998V16.6666C1.66699 17.1087 1.84259 17.5326 2.15515 17.8452C2.46771 18.1577 2.89163 18.3333 3.33366 18.3333H15.0003C15.4424 18.3333 15.8663 18.1577 16.1788 17.8452C16.4914 17.5326 16.667 17.1087 16.667 16.6666V10.8333" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.417 2.08332C15.7485 1.7518 16.1982 1.56555 16.667 1.56555C17.1358 1.56555 17.5855 1.7518 17.917 2.08332C18.2485 2.41484 18.4348 2.86448 18.4348 3.33332C18.4348 3.80216 18.2485 4.2518 17.917 4.58332L10.0003 12.5L6.66699 13.3333L7.50033 9.99999L15.417 2.08332Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_2511_332">
+              <rect width="20" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+            Статьи
+          </a>
+          <a class="mobile-nav__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10.0003 15.8334C8.08366 15.8334 4.66699 15.6667 3.25033 15.3334C2.66699 15.1667 2.25033 14.75 2.08366 14.1667C1.83366 13.25 1.66699 11.3334 1.66699 10C1.66699 8.66669 1.83366 6.75002 2.08366 5.83335C2.25033 5.25002 2.66699 4.83335 3.25033 4.66669C4.66699 4.33335 8.08366 4.16669 10.0003 4.16669C11.917 4.16669 15.3337 4.33335 16.7503 4.66669C17.3337 4.83335 17.7503 5.25002 17.917 5.83335C18.167 6.75002 18.3337 8.66669 18.3337 10C18.3337 11.3334 18.167 13.25 17.917 14.1667C17.7503 14.75 17.3337 15.1667 16.7503 15.3334C15.3337 15.6667 11.917 15.8334 10.0003 15.8334V15.8334Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.33301 12.5L12.4997 10L8.33301 7.5V12.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Видеоблог
+          </a>
+          <a class="mobile-nav__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M17.5 9.58336C17.5029 10.6832 17.2459 11.7683 16.75 12.75C16.162 13.9265 15.2581 14.916 14.1395 15.6078C13.021 16.2995 11.7319 16.6662 10.4167 16.6667C9.31678 16.6696 8.23176 16.4126 7.25 15.9167L2.5 17.5L4.08333 12.75C3.58744 11.7683 3.33047 10.6832 3.33333 9.58336C3.33384 8.26815 3.70051 6.97907 4.39227 5.86048C5.08402 4.7419 6.07355 3.838 7.25 3.25002C8.23176 2.75413 9.31678 2.49716 10.4167 2.50002H10.8333C12.5703 2.59585 14.2109 3.32899 15.4409 4.55907C16.671 5.78915 17.4042 7.42973 17.5 9.16669V9.58336Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Отзывы
+          </a>
+        </div>
+        <a class="mobile-nav__mail" href="mailto:info@art-active24.ru">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M16.667 3.33331H3.33366C2.41318 3.33331 1.66699 4.07951 1.66699 4.99998V15C1.66699 15.9205 2.41318 16.6666 3.33366 16.6666H16.667C17.5875 16.6666 18.3337 15.9205 18.3337 15V4.99998C18.3337 4.07951 17.5875 3.33331 16.667 3.33331Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18.3337 5.83331L10.8587 10.5833C10.6014 10.7445 10.3039 10.83 10.0003 10.83C9.69673 10.83 9.39927 10.7445 9.14199 10.5833L1.66699 5.83331" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          info@art-active24.ru
+        </a>
+        <div class="mobile-nav__contacts">
+          <a class="mobile-nav__phone" href="tel:">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M22.0004 16.92V19.92C22.0016 20.1985 21.9445 20.4741 21.8329 20.7293C21.7214 20.9845 21.5577 21.2136 21.3525 21.4018C21.1473 21.5901 20.905 21.7335 20.6412 21.8227C20.3773 21.9119 20.0978 21.945 19.8204 21.92C16.7433 21.5856 13.7874 20.5341 11.1904 18.85C8.77425 17.3146 6.72576 15.2661 5.19042 12.85C3.5004 10.2412 2.44866 7.27097 2.12042 4.17997C2.09543 3.90344 2.1283 3.62474 2.21692 3.3616C2.30555 3.09846 2.44799 2.85666 2.63519 2.6516C2.82238 2.44653 3.05023 2.28268 3.30421 2.1705C3.5582 2.05831 3.83276 2.00024 4.11042 1.99997H7.11042C7.59573 1.9952 8.06621 2.16705 8.43418 2.48351C8.80215 2.79996 9.0425 3.23942 9.11042 3.71997C9.23704 4.68004 9.47187 5.6227 9.81042 6.52997C9.94497 6.8879 9.97408 7.27689 9.89433 7.65086C9.81457 8.02482 9.62928 8.36809 9.36042 8.63998L8.09042 9.90997C9.51398 12.4135 11.5869 14.4864 14.0904 15.91L15.3604 14.64C15.6323 14.3711 15.9756 14.1858 16.3495 14.1061C16.7235 14.0263 17.1125 14.0554 17.4704 14.19C18.3777 14.5285 19.3204 14.7634 20.2804 14.89C20.7662 14.9585 21.2098 15.2032 21.527 15.5775C21.8441 15.9518 22.0126 16.4296 22.0004 16.92Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.0498 2C16.0881 2.21477 17.992 3.1188 19.4467 4.56258C20.9014 6.00636 21.8197 7.90341 22.0498 9.94" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.0498 6C15.0333 6.19394 15.9358 6.67903 16.6402 7.39231C17.3446 8.10559 17.8183 9.01413 17.9998 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Свяжитесь со мной
+          </a>
+          <a class="social-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3749 8.80194C6.74359 6.46288 10.3236 4.92083 12.1148 4.17579C17.2292 2.04854 18.2919 1.67902 18.9846 1.66682C19.1369 1.66413 19.4776 1.70189 19.6982 1.88093C19.8845 2.03211 19.9358 2.23633 19.9603 2.37966C19.9848 2.523 20.0154 2.84952 19.9911 3.10465C19.714 6.01669 18.5147 13.0834 17.9046 16.345C17.6465 17.725 17.1382 18.1878 16.6461 18.2331C15.5766 18.3315 14.7645 17.5263 13.7287 16.8473C12.1078 15.7848 11.1921 15.1234 9.61879 14.0866C7.80053 12.8884 8.97923 12.2298 10.0154 11.1536C10.2866 10.8719 14.9987 6.58589 15.0899 6.19709C15.1013 6.14846 15.1119 5.9672 15.0042 5.87149C14.8965 5.77578 14.7376 5.80851 14.6229 5.83454C14.4604 5.87144 11.871 7.5829 6.85486 10.9689C6.11988 11.4736 5.45416 11.7195 4.8577 11.7067C4.20015 11.6924 2.93528 11.3349 1.99498 11.0292C0.84166 10.6543 -0.074973 10.4561 0.00484519 9.81941C0.0464194 9.48778 0.503103 9.14862 1.3749 8.80194Z" fill="#6C70AC"/>
+            </svg>
+          </a>
+          <a class="social-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_790_13740)">
+              <path d="M17.0732 2.91667C15.1916 1.04167 12.6829 0 10.0348 0C4.52961 0 0.0696853 4.44444 0.0696853 9.93056C0.0696853 11.6667 0.557491 13.4028 1.39373 14.8611L0 20L5.29617 18.6111C6.75958 19.375 8.36237 19.7917 10.0348 19.7917C15.5401 19.7917 20 15.3472 20 9.86111C19.9303 7.29167 18.9547 4.79167 17.0732 2.91667ZM14.8432 13.4722C14.6341 14.0278 13.6585 14.5833 13.1707 14.6528C12.7526 14.7222 12.1951 14.7222 11.6376 14.5833C11.2892 14.4444 10.8014 14.3056 10.2439 14.0278C7.73519 12.9861 6.13241 10.4861 5.99303 10.2778C5.85366 10.1389 4.94774 8.95833 4.94774 7.70833C4.94774 6.45833 5.57491 5.90278 5.78397 5.625C5.99303 5.34722 6.27178 5.34722 6.48084 5.34722C6.62021 5.34722 6.82927 5.34722 6.96864 5.34722C7.10801 5.34722 7.31707 5.27778 7.52613 5.76389C7.73519 6.25 8.22299 7.5 8.29268 7.56944C8.36237 7.70833 8.36237 7.84722 8.29268 7.98611C8.22299 8.125 8.15331 8.26389 8.01393 8.40278C7.87456 8.54167 7.73519 8.75 7.6655 8.81944C7.52613 8.95833 7.38676 9.09722 7.52613 9.30555C7.6655 9.58333 8.15331 10.3472 8.91986 11.0417C9.89547 11.875 10.662 12.1528 10.9408 12.2917C11.2195 12.4306 11.3589 12.3611 11.4983 12.2222C11.6376 12.0833 12.1254 11.5278 12.2648 11.25C12.4042 10.9722 12.6132 11.0417 12.8223 11.1111C13.0314 11.1806 14.2857 11.8056 14.4948 11.9444C14.7735 12.0833 14.9129 12.1528 14.9826 12.2222C15.0523 12.4306 15.0523 12.9167 14.8432 13.4722Z" fill="#6C70AC"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_790_13740">
+              <rect width="20" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main product-page">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__list">
+          <a href="#">Главная</a>
+          <span>></span>
+          <a href="#">Аренда шатров</a>
+          <span>></span>
+          <a href="#">Аренда мобильных шатров</a>
+          <span>></span>
+          <span>Тент быстровозводимый 3x3</span> 
+        </div>
+      </div>
+    </div>
+
+    <section class="product">
+      <div class="container">
+        <h1 class="product__title">
+          Аттракцион Бык Родео
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.58984 13.51L15.4198 17.49" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.4098 6.51001L8.58984 10.49" stroke="#6C70AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </h1>
+        <div class="product__inner">
+          <div class="product__slider-wrapper">
+            <div class="product__slider-box">
+              <div class="small-slider__container">
+                <div class="small-slider">
+                  <div class="swiper-wrapper">
+                    <div class="small-slider__item swiper-slide">
+                      <img src="images/slider/small-img1.jpg" alt="">
+                    </div>
+                    <div class="small-slider__item swiper-slide">
+                      <img src="images/slider/small-img2.jpg" alt="">
+                    </div>
+                    <div class="small-slider__item swiper-slide">
+                      <img src="images/slider/small-img3.jpg" alt="">
+                    </div>
+                    <div class="small-slider__item swiper-slide">
+                      <img src="images/slider/small-img4.jpg" alt="">
+                    </div>
+                    <div class="small-slider__item swiper-slide">
+                      <img src="images/slider/small-img5.jpg" alt="">
+                    </div>
+                    <div class="small-slider__item swiper-slide">
+                      <img src="images/slider/small-img1.jpg" alt="">
+                    </div>
+                    <div class="small-slider__item swiper-slide">
+                      <img src="images/slider/small-img2.jpg" alt="">
+                    </div>
+                    <div class="small-slider__item swiper-slide">
+                      <img src="images/slider/small-img3.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="small-slider-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 15L12 9L6 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="small-slider-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="big-slider">
+                <div class="swiper-wrapper">
+                  <a class="big-slider__item swiper-slide" href="images/slider/small-img1.jpg" data-fancybox="main-product">
+                    <img src="images/slider/small-img1.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="images/slider/small-img2.jpg" data-fancybox="main-product">
+                    <img src="images/slider/small-img2.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="images/slider/small-img3.jpg" data-fancybox="main-product">
+                    <img src="images/slider/small-img3.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="images/slider/small-img4.jpg" data-fancybox="main-product">
+                    <img src="images/slider/small-img4.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="images/slider/small-img5.jpg" data-fancybox="main-product">
+                    <img src="images/slider/small-img5.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="images/slider/small-img1.jpg" data-fancybox="main-product">
+                    <img src="images/slider/small-img1.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="images/slider/small-img2.jpg" data-fancybox="main-product">
+                    <img src="images/slider/small-img2.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="images/slider/small-img3.jpg" data-fancybox="main-product">
+                    <img src="images/slider/small-img3.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__content">
+            <div class="product__complect-box">
+              <div class="product__complect-articul">Артикул: 4775</div>
+              <div class="product__complect-big">
+                <div>
+                  <h6>от <span>8 000 ₽</span>/сутки</h6>
+                  <p>шатер меньше нагревается | может работать проектор</p>
+                  <a href="">Все характеристики</a>
+                </div>
+                <a href="">Заказать</a>
+              </div>
+              <div class="product__complect-item complect-item">
+                <div class="complect-item__inner">
+                  <img class="complect-item__img" src="images/complect-img.jpg" alt="">
+                  <div class="complect-item__content">
+                    <div class="complect-item__content-row complect-item__content-row-title">
+                      <span>Комплект — «Муниципальный»</span>
+                      <img src="images/icons/info.svg" alt="">
+                    </div>
+                    <div class="complect-item__content-row complect-item__content-row-price">
+                      <div class="complect-item__price-box">
+                        от <span>35 000 ₽</span>/ 3 часа
+                      </div>
+                      <div class="complect-item__price-box">
+                        от <span>42 000 ₽</span>/ 6 часов
+                      </div>
+                    </div>
+                    <div class="complect-item__content-row complect-item__content-row1">
+                      4 из 10 баллов | 2 режима скорости
+                    </div>
+                  </div>
+                  <a class="complect-item__link" href="#">Заказать</a>
+                </div>
+                <div class="complect-popup">
+
+                  <div class="complect-popup__content">
+                    <button class="complect-popup__content--close">
+                      <img src="images/icons/popup-close.svg" alt="">
+                    </button>
+                    <div class="complect-popup__scrolling">
+                      <div class="complect-popup__slider-box">
+                        <div class="popup-small-slider__container">
+                          <div class="popup-small-slider">
+                            <div class="swiper-wrapper">
+                              <div class="popup-small-slider__item swiper-slide">
+                                <img src="images/popup-img.jpg" alt=""> 
+                              </div>
+                              <div class="popup-small-slider__item swiper-slide">
+                                <img src="images/popup-img.jpg" alt="">
+                              </div>
+                              <div class="popup-small-slider__item swiper-slide">
+                                <img src="images/popup-img.jpg" alt="">
+                              </div>
+                              <div class="popup-small-slider__item swiper-slide">
+                                <img src="images/popup-img.jpg" alt="">
+                              </div>
+                              <div class="popup-small-slider__item swiper-slide">
+                                <img src="images/popup-img.jpg" alt="">
+                              </div>
+                              <div class="popup-small-slider__item swiper-slide">
+                                <img src="images/popup-img.jpg" alt="">
+                              </div>
+                              <div class="popup-small-slider__item swiper-slide">
+                                <img src="images/popup-img.jpg" alt="">
+                              </div>
+                              <div class="popup-small-slider__item swiper-slide">
+                                <img src="images/popup-img.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="popup-small-slider-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M18 15L12 9L6 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                          <div class="popup-small-slider-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="popup-big-slider">
+                          <div class="swiper-wrapper">
+                            <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                              <img src="images/popup-img.jpg" alt="">
+                            </a>
+                            <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                              <img src="images/popup-img.jpg" alt="">
+                            </a>
+                            <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                              <img src="images/popup-img.jpg" alt="">
+                            </a>
+                            <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                              <img src="images/popup-img.jpg" alt="">
+                            </a>
+                            <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                              <img src="images/popup-img.jpg" alt="">
+                            </a>
+                            <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                              <img src="images/popup-img.jpg" alt="">
+                            </a>
+                            <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                              <img src="images/popup-img.jpg" alt="">
+                            </a>
+                            <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                              <img src="images/popup-img.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="complect-popup__title">Тент быстровозводимый 3x3 1111</div>
+                      <div class="complect-popup__price-box">
+                        <div class="complect-popup__price-item">от <span>8 000 ₽</span>/сутки</div>
+                        <div class="complect-popup__price-item">от <span>7 600 ₽</span>/сутки с 3-го дня</div>
+                      </div>
+                      <p class="complect-popup__text">
+                        Мы предоставляем полный пакет услуг по аренде шатра, включая доставку, установку и демонтаж, а также дополнительное оборудование по запросу клиента. Мы гарантируем своевременное выполнение заказа и высокое качество предоставляемых услуг.
+                      </p>
+                      <p class="complect-popup__text">
+                        Для получения более подробной информации о наших услугах и ценах на аренду шатров свяжитесь с нами по указанным контактам. Мы всегда готовы помочь вам сделать ваше мероприятие незабываемым!
+                      </p>
+                    </div>
+                  </div>
+              </div>
+              </div> 
+              <div class="product__complect-item complect-item">
+                <div class="complect-item__inner">
+                  <img class="complect-item__img" src="images/complect-img.jpg" alt="">
+                  <div class="complect-item__content">
+                    <div class="complect-item__content-row complect-item__content-row-title">
+                      <span>Комплект — «Муниципальный»</span>
+                      <img src="images/icons/info.svg" alt="">
+                    </div>
+                    <div class="complect-item__content-row complect-item__content-row-price">
+                      <div class="complect-item__price-box">
+                        от <span>35 000 ₽</span>/ 3 часа
+                      </div>
+                      <div class="complect-item__price-box">
+                        от <span>42 000 ₽</span>/ 6 часов
+                      </div>
+                    </div>
+                    <div class="complect-item__content-row">
+                      4 из 10 баллов | 2 режима скорости
+                    </div>
+                  </div>
+                  <a class="complect-item__link" href="#">Заказать</a>
+                </div>
+                <div class="complect-popup">
+
+                    <div class="complect-popup__content">
+                      <button class="complect-popup__content--close">
+                        <img src="images/icons/popup-close.svg" alt="">
+                      </button>
+                      <div class="complect-popup__scrolling">
+                        <div class="complect-popup__slider-box">
+                          <div class="popup-small-slider__container">
+                            <div class="popup-small-slider">
+                              <div class="swiper-wrapper">
+                                <div class="popup-small-slider__item swiper-slide">
+                                  <img src="images/popup-img.jpg" alt=""> 
+                                </div>
+                                <div class="popup-small-slider__item swiper-slide">
+                                  <img src="images/popup-img.jpg" alt="">
+                                </div>
+                                <div class="popup-small-slider__item swiper-slide">
+                                  <img src="images/popup-img.jpg" alt="">
+                                </div>
+                                <div class="popup-small-slider__item swiper-slide">
+                                  <img src="images/popup-img.jpg" alt="">
+                                </div>
+                                <div class="popup-small-slider__item swiper-slide">
+                                  <img src="images/popup-img.jpg" alt="">
+                                </div>
+                                <div class="popup-small-slider__item swiper-slide">
+                                  <img src="images/popup-img.jpg" alt="">
+                                </div>
+                                <div class="popup-small-slider__item swiper-slide">
+                                  <img src="images/popup-img.jpg" alt="">
+                                </div>
+                                <div class="popup-small-slider__item swiper-slide">
+                                  <img src="images/popup-img.jpg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="popup-small-slider-prev">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 15L12 9L6 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </div>
+                            <div class="popup-small-slider-next">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="popup-big-slider">
+                            <div class="swiper-wrapper">
+                              <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                                <img src="images/popup-img.jpg" alt="">
+                              </a>
+                              <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                                <img src="images/popup-img.jpg" alt="">
+                              </a>
+                              <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                                <img src="images/popup-img.jpg" alt="">
+                              </a>
+                              <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                                <img src="images/popup-img.jpg" alt="">
+                              </a>
+                              <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                                <img src="images/popup-img.jpg" alt="">
+                              </a>
+                              <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                                <img src="images/popup-img.jpg" alt="">
+                              </a>
+                              <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                                <img src="images/popup-img.jpg" alt="">
+                              </a>
+                              <a class="popup-big-slider__item swiper-slide" href="images/popup-img.jpg" data-fancybox="product-popup2">
+                                <img src="images/popup-img.jpg" alt="">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="complect-popup__title">Тент быстровозводимый 3x3 1111</div>
+                        <div class="complect-popup__price-box">
+                          <div class="complect-popup__price-item">от <span>8 000 ₽</span>/сутки</div>
+                          <div class="complect-popup__price-item">от <span>7 600 ₽</span>/сутки с 3-го дня</div>
+                        </div>
+                        <p class="complect-popup__text">
+                          Мы предоставляем полный пакет услуг по аренде шатра, включая доставку, установку и демонтаж, а также дополнительное оборудование по запросу клиента. Мы гарантируем своевременное выполнение заказа и высокое качество предоставляемых услуг.
+                        </p>
+                        <p class="complect-popup__text">
+                          Для получения более подробной информации о наших услугах и ценах на аренду шатров свяжитесь с нами по указанным контактам. Мы всегда готовы помочь вам сделать ваше мероприятие незабываемым!
+                        </p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__recommend product-recommend">
+              <a class="product-recommend__item" href="images/product-recommend.jpg" data-fancybox="product-dops">
+                <img src="images/product-recommend.jpg" alt="">
+                <div class="product-recommend__title">Помощник повара</div>
+                <div class="product-recommend__price-box">от <span>4 500 ₽</span>/шт.</div>
+              </a>
+              <a class="product-recommend__item" href="#">
+                <img src="images/product-recommend.jpg" alt="">
+                <div class="product-recommend__title">Помощник повара</div>
+                <div class="product-recommend__price-box">от <span>4 500 ₽</span>/шт.</div>
+              </a>
+              <a class="product-recommend__item" href="#">
+                <img src="images/product-recommend.jpg" alt="">
+                <div class="product-recommend__title">Помощник повара</div>
+                <div class="product-recommend__price-box">от <span>4 500 ₽</span>/шт.</div>
+              </a>
+              <a class="product-recommend__item" href="#">
+                <img src="images/product-recommend.jpg" alt="">
+                <div class="product-recommend__title">Помощник повара</div>
+                <div class="product-recommend__price-box">от <span>4 500 ₽</span>/шт.</div>
+              </a>
+              <a class="product-recommend__item" href="#">
+                <img src="images/product-recommend.jpg" alt="">
+                <div class="product-recommend__title">Помощник повара</div>
+                <div class="product-recommend__price-box">от <span>4 500 ₽</span>/шт.</div>
+              </a>
+              <a class="product-recommend__item" href="#">
+                <img src="images/product-recommend.jpg" alt="">
+                <div class="product-recommend__title">Помощник повара</div>
+                <div class="product-recommend__price-box">от <span>4 500 ₽</span>/шт.</div>
+              </a>
+              <a class="product-recommend__item" href="#">
+                <img src="images/product-recommend.jpg" alt="">
+                <div class="product-recommend__title">Помощник повара</div>
+                <div class="product-recommend__price-box">от <span>4 500 ₽</span>/шт.</div>
+              </a>
+              <a class="product-recommend__item" href="#">
+                <img src="images/product-recommend.jpg" alt="">
+                <div class="product-recommend__title">Помощник повара</div>
+                <div class="product-recommend__price-box">от <span>4 500 ₽</span>/шт.</div>
+              </a>
+            </div>
+            <div class="product__video-box">
+              <a class="product__video-item" href="#" data-fancybox>
+                <img src="images/video.jpg" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84" fill="none">
+                  <path d="M74.7188 25.8523C73.9323 22.9285 71.6271 20.6236 68.7036 19.8363C63.3628 18.375 41.9992 18.375 41.9992 18.375C41.9992 18.375 20.6365 18.375 15.2957 19.7809C12.4285 20.5674 10.067 22.9289 9.28049 25.8523C7.875 31.1927 7.875 42.2679 7.875 42.2679C7.875 42.2679 7.875 53.399 9.28049 58.6835C10.0678 61.607 12.3722 63.9118 15.2961 64.6991C20.6927 66.1609 42.0001 66.1609 42.0001 66.1609C42.0001 66.1609 63.3628 66.1609 68.7036 64.755C71.6275 63.9681 73.9323 61.6632 74.7196 58.7397C76.1247 53.399 76.1247 42.3242 76.1247 42.3242C76.1247 42.3242 76.181 31.1927 74.7188 25.8523Z" fill="black" fill-opacity="0.6"/>
+                  <path d="M35.1973 52.4996V32.0363L52.9621 42.2679L35.1973 52.4996Z" fill="white"/>
+                </svg>
+              </a>
+              <div class="product__video-tabs">
+                <button class="product__video-btn product__video-btn--active">Видео 1</button>
+                <button class="product__video-btn">Видео 2</button>
+                <button class="product__video-btn">Видео 3</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommend">
+      <div class="container">
+        <div class="recommend__title">Подходит к тенту</div>
+        <div class="recommend__items-wrapper">
+          <div class="recommend__items">
+            <a class="recommend__item recommend__item--active" href="#">Дополнительные элементы</a>
+            <a class="recommend__item" href="#">Напольное покрытие</a>
+            <a class="recommend__item" href="#">Персонал</a>
+            <a class="recommend__item" href="#">Оформление</a>
+            <a class="recommend__item" href="#">Брендирование</a>
+            <a class="recommend__item" href="#">Освещение</a>
+            <a class="recommend__item" href="#">Кондиционирование</a>
+            <a class="recommend__item" href="#">Отопление</a>
+            <a class="recommend__item" href="#">Спецтехника</a>
+            <a class="recommend__item" href="#">Транспорт</a>
+            <a class="recommend__item" href="#">Электропитание</a>
+            <a class="recommend__item" href="#">Безопасность</a>
+          </div>
+        </div>
+        <div class="recommend__slider-wrapper">
+          <div class="recommend__slider">
+            <div class="swiper-wrapper">
+              <a class="recommend__slider-item swiper-slide" href="images/recommend-img.jpg" data-fancybox="recommend">
+                <div class="recommend__item-img">
+                  <img src="images/recommend-img.jpg" alt="">
+                </div>
+                <div class="recommend__item-title">Крыша Солнцезащитная (blackout)</div>
+                <p class="recommend__item-text">
+                  шатер меньше нагревается | может работать проектор
+                </p>
+                <div class="recommend__item-price">от <span>5 500 ₽</span>/шт</div>
+              </a>
+              <a class="recommend__slider-item swiper-slide" href="#">
+                <div class="recommend__item-img">
+                  <img src="images/recommend-img.jpg" alt="">
+                </div>
+                <div class="recommend__item-title">Крыша Солнцезащитная (blackout)</div>
+                <p class="recommend__item-text">
+                  шатер меньше нагревается | может работать проектор
+                </p>
+                <div class="recommend__item-price">от <span>5 500 ₽</span>/шт</div>
+              </a>
+              <a class="recommend__slider-item swiper-slide" href="#">
+                <div class="recommend__item-img">
+                  <img src="images/recommend-img.jpg" alt="">
+                </div>
+                <div class="recommend__item-title">Крыша Солнцезащитная (blackout)</div>
+                <p class="recommend__item-text">
+                  шатер меньше нагревается | может работать проектор
+                </p>
+                <div class="recommend__item-price">от <span>5 500 ₽</span>/шт</div>
+              </a>
+              <a class="recommend__slider-item swiper-slide" href="#">
+                <div class="recommend__item-img">
+                  <img src="images/recommend-img.jpg" alt="">
+                </div>
+                <div class="recommend__item-title">Крыша Солнцезащитная (blackout)</div>
+                <p class="recommend__item-text">
+                  шатер меньше нагревается | может работать проектор
+                </p>
+                <div class="recommend__item-price">от <span>5 500 ₽</span>/шт</div>
+              </a>
+              <a class="recommend__slider-item swiper-slide" href="#">
+                <div class="recommend__item-img">
+                  <img src="images/recommend-img.jpg" alt="">
+                </div>
+                <div class="recommend__item-title">Крыша Солнцезащитная (blackout)</div>
+                <p class="recommend__item-text">
+                  шатер меньше нагревается | может работать проектор
+                </p>
+                <div class="recommend__item-price">от <span>5 500 ₽</span>/шт</div>
+              </a>
+              <a class="recommend__slider-item swiper-slide" href="#">
+                <div class="recommend__item-img">
+                  <img src="images/recommend-img.jpg" alt="">
+                </div>
+                <div class="recommend__item-title">Крыша Солнцезащитная (blackout)</div>
+                <p class="recommend__item-text">
+                  шатер меньше нагревается | может работать проектор
+                </p>
+                <div class="recommend__item-price">от <span>5 500 ₽</span>/шт</div>
+              </a>
+              <a class="recommend__slider-item swiper-slide" href="#">
+                <div class="recommend__item-img">
+                  <img src="images/recommend-img.jpg" alt="">
+                </div>
+                <div class="recommend__item-title">Крыша Солнцезащитная (blackout)</div>
+                <p class="recommend__item-text">
+                  шатер меньше нагревается | может работать проектор
+                </p>
+                <div class="recommend__item-price">от <span>5 500 ₽</span>/шт</div>
+              </a>
+              <a class="recommend__slider-item swiper-slide" href="#">
+                <div class="recommend__item-img">
+                  <img src="images/recommend-img.jpg" alt="">
+                </div>
+                <div class="recommend__item-title">Крыша Солнцезащитная (blackout)</div>
+                <p class="recommend__item-text">
+                  шатер меньше нагревается | может работать проектор
+                </p>
+                <div class="recommend__item-price">от <span>5 500 ₽</span>/шт</div>
+              </a>
+            </div>
+          </div>
+          <div class="recommend-slider-pagination"></div>
+          <div class="recommend-slider-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M8 20L16 12L8 4" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="recommend-slider-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M8 20L16 12L8 4" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+   <section class="prod-info">
+      <div class="container">
+        <div class="prod-info__title">Характеристики</div>
+        <div class="prod-info__inner">
+          <div class="prod-info__item">
+            <div class="prod-info__prop">Характеристика</div>
+            <div class="prod-info__value">Значение</div>
+          </div>
+          <div class="prod-info__item">
+            <div class="prod-info__prop">Характеристика</div>
+            <div class="prod-info__value">Значение</div>
+          </div>
+          <div class="prod-info__item">
+            <div class="prod-info__prop">Характеристика</div>
+            <div class="prod-info__value">Значение</div>
+          </div>
+          <div class="prod-info__item">
+            <div class="prod-info__prop">Характеристика</div>
+            <div class="prod-info__value">Значение</div>
+          </div>
+          <div class="prod-info__item">
+            <div class="prod-info__prop">Характеристика</div>
+            <div class="prod-info__value">Значение</div>
+          </div>
+        </div>
+        <a class="prod-info__link" href="#">Все характеристики</a>
+      </div>
+    </section>
+
+    <section class="prod-desc">
+      <div class="container">
+        <div class="prod-desc__title">Описание</div>
+        <p>Требуется арендовать шатер размером 3х3 метра на некоторое мероприятие в ближайшее время? Обращайтесь к нам! Мы предлагаем услуги аренды шатров для любых мероприятий - от детских праздников до свадеб и корпоративных вечеринок.</p>
+        <p>Наш шатер 3х3 метра выполнен из высококачественных материалов, что обеспечивает прочность и надежность конструкции. Он легко переносится и быстро устанавливается, благодаря чему экономит время и силы заказчика.</p>
+        <a class="prod-desc__link" href="#">Читать все</a>
+      </div>
+    </section>
+
+    <section class="oplata">
+      <div class="container">
+        <div class="oplata__title">Доставка и оплата</div>
+        <div class="oplata__item">
+          <div class="oplata__item-title">Доставка по Москве</div>
+          <div class="oplata__item-price">от <span>8 000 ₽</span>/сутки</div> 
+          <p class="oplata__text">точную стоимость уточняйте по телефону у наших менеджеров</p>
+        </div>
+        <div class="oplata__item">
+          <div class="oplata__item-title">Доставка по Москве</div>
+          <div class="oplata__item-price">от <span>8 000 ₽</span>/сутки</div> 
+          <p class="oplata__text">точную стоимость уточняйте по телефону у наших менеджеров</p>
+        </div>
+        <div class="oplata__item">
+          <div class="oplata__item-title">Доставка по Москве</div>
+          <div class="oplata__item-price">от <span>8 000 ₽</span>/сутки</div> 
+          <p class="oplata__text">точную стоимость уточняйте по телефону у наших менеджеров</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="similar">
+      <div class="container">
+        <div class="similar__title">Похожие позиции</div>
+        <div class="similar__slider-wrapper">
+          <div class="similar__slider">
+            <div class="swiper-wrapper">
+              <a class="similar__slider-item swiper-slide" href="#">
+                <div class="similar__item-img">
+                  <img src="images/similar-img1.jpg" alt="">
+                </div>
+                <div class="similar__item-title">Тент быстровозводимый 3x4,5</div>
+                <div class="similar__item-subtext">до 6 человек</div>
+                <div class="similar__price">от <span>9 500 ₽</span>/сутки</div>
+              </a>
+              <a class="similar__slider-item swiper-slide" href="#">
+                <div class="similar__item-img">
+                  <img src="images/similar-img1.jpg" alt="">
+                </div>
+                <div class="similar__item-title">Тент быстровозводимый 3x4,5</div>
+                <div class="similar__item-subtext">до 6 человек</div>
+                <div class="similar__price">от <span>9 500 ₽</span>/сутки</div>
+              </a>
+              <a class="similar__slider-item swiper-slide" href="#">
+                <div class="similar__item-img">
+                  <img src="images/similar-img1.jpg" alt="">
+                </div>
+                <div class="similar__item-title">Тент быстровозводимый 3x4,5</div>
+                <div class="similar__item-subtext">до 6 человек</div>
+                <div class="similar__price">от <span>9 500 ₽</span>/сутки</div>
+              </a>
+              <a class="similar__slider-item swiper-slide" href="#">
+                <div class="similar__item-img">
+                  <img src="images/similar-img1.jpg" alt="">
+                </div>
+                <div class="similar__item-title">Тент быстровозводимый 3x4,5</div>
+                <div class="similar__item-subtext">до 6 человек</div>
+                <div class="similar__price">от <span>9 500 ₽</span>/сутки</div>
+              </a>
+              <a class="similar__slider-item swiper-slide" href="#">
+                <div class="similar__item-img">
+                  <img src="images/similar-img1.jpg" alt="">
+                </div>
+                <div class="similar__item-title">Тент быстровозводимый 3x4,5</div>
+                <div class="similar__item-subtext">до 6 человек</div>
+                <div class="similar__price">от <span>9 500 ₽</span>/сутки</div>
+              </a>
+              <a class="similar__slider-item swiper-slide" href="#">
+                <div class="similar__item-img">
+                  <img src="images/similar-img1.jpg" alt="">
+                </div>
+                <div class="similar__item-title">Тент быстровозводимый 3x4,5</div>
+                <div class="similar__item-subtext">до 6 человек</div>
+                <div class="similar__price">от <span>9 500 ₽</span>/сутки</div>
+              </a>
+            </div>
+          </div>
+          <div class="similar-slider-pagination"></div>
+          <div class="similar-slider-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M8 20L16 12L8 4" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="similar-slider-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M8 20L16 12L8 4" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="links">
+      <div class="container">
+        <div class="links__inner">
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M3.33317 17.5H16.6665C17.1085 17.5 17.5325 17.3244 17.845 17.0118C18.1576 16.6993 18.3332 16.2754 18.3332 15.8333V10.8333C18.3332 8.6232 17.4552 6.50358 15.8924 4.94078C14.3296 3.37797 12.21 2.5 9.99984 2.5C8.90549 2.5 7.82186 2.71555 6.81081 3.13434C5.79976 3.55313 4.8811 4.16696 4.10728 4.94078C2.54448 6.50358 1.6665 8.6232 1.6665 10.8333V15.8333C1.6665 16.2754 1.8421 16.6993 2.15466 17.0118C2.46722 17.3244 2.89114 17.5 3.33317 17.5V17.5Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.2409 9.16675H6.75942C6.24805 9.16675 5.8335 9.5813 5.8335 10.0927V16.5742C5.8335 17.0855 6.24805 17.5001 6.75942 17.5001H13.2409C13.7523 17.5001 14.1668 17.0855 14.1668 16.5742V10.0927C14.1668 9.5813 13.7523 9.16675 13.2409 9.16675Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Шатры
+          </a>
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M2.5 18.3333H17.5" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 15.0001V9.16675" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.3335 15.0001V9.16675" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11.6665 15.0001V9.16675" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 15.0001V9.16675" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10.0002 1.66675L16.6668 5.83341H3.3335L10.0002 1.66675Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Сцены и подиумы
+          </a>
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_2448_1265)">
+              <path d="M12.5 9.16675H12.5083" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.1665 12.5H9.17484" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.3335 13.3333H13.3418" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.6665 13.3334L18.3332 18.3334L13.3332 1.66675C10.5332 2.41675 7.98317 3.89175 5.93317 5.93341C3.88842 7.98462 2.41728 10.5361 1.6665 13.3334Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.1667 5C8.925 6.225 6.30833 9.275 5 14.1667" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_2448_1265">
+              <rect width="20" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+            Кейтеринг
+          </a>
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_2448_1896)">
+              <path d="M9.99983 7.49994C9.25627 7.48796 8.53005 7.72497 7.9367 8.17327C7.34335 8.62158 6.91696 9.25542 6.72534 9.97397C6.53373 10.6925 6.5879 11.4545 6.87925 12.1387C7.17059 12.823 7.68237 13.3901 8.33317 13.7499" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 2.5V4.16667" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.50016 15.3333L4.3335 16.4999" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.6665 3.33341V12.1167C17.302 12.4836 17.7986 13.05 18.0794 13.7279C18.3602 14.4058 18.4095 15.1575 18.2196 15.8662C18.0297 16.575 17.6112 17.2013 17.029 17.648C16.4469 18.0947 15.7336 18.3368 14.9998 18.3368C14.2661 18.3368 13.5528 18.0947 12.9706 17.648C12.3885 17.2013 11.97 16.575 11.7801 15.8662C11.5902 15.1575 11.6394 14.4058 11.9202 13.7279C12.201 13.05 12.6977 12.4836 13.3332 12.1167V3.33341C13.3332 2.89139 13.5088 2.46746 13.8213 2.1549C14.1339 1.84234 14.5578 1.66675 14.9998 1.66675C15.4419 1.66675 15.8658 1.84234 16.1783 2.1549C16.4909 2.46746 16.6665 2.89139 16.6665 3.33341V3.33341Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.33317 10.8333H1.6665" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.2834 6.11665L4.1084 4.94165" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_2448_1896">
+              <rect width="20" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+            Обогреватели
+          </a>
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M15.8332 7.49992V4.99992C15.8332 4.55789 15.6576 4.13397 15.345 3.82141C15.0325 3.50885 14.6085 3.33325 14.1665 3.33325H5.83317C5.39114 3.33325 4.96722 3.50885 4.65466 3.82141C4.3421 4.13397 4.1665 4.55789 4.1665 4.99992V7.49992" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.5 9.16667V13.3333C2.5 13.7754 2.67559 14.1993 2.98816 14.5118C3.30072 14.8244 3.72464 15 4.16667 15H15.8333C16.2754 15 16.6993 14.8244 17.0118 14.5118C17.3244 14.1993 17.5 13.7754 17.5 13.3333V9.16667C17.5 8.72464 17.3244 8.30072 17.0118 7.98816C16.6993 7.6756 16.2754 7.5 15.8333 7.5C15.3913 7.5 14.9674 7.6756 14.6548 7.98816C14.3423 8.30072 14.1667 8.72464 14.1667 9.16667V10.8333H5.83333V9.16667C5.83333 8.72464 5.65774 8.30072 5.34518 7.98816C5.03262 7.6756 4.60869 7.5 4.16667 7.5C3.72464 7.5 3.30072 7.6756 2.98816 7.98816C2.67559 8.30072 2.5 8.72464 2.5 9.16667V9.16667Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.1665 15V16.6667" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.8335 15V16.6667" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Мебель
+          </a>
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M2.5 1.66675V7.50008C2.5 8.41675 3.25 9.16675 4.16667 9.16675H7.5C7.94203 9.16675 8.36595 8.99115 8.67851 8.67859C8.99107 8.36603 9.16667 7.94211 9.16667 7.50008V1.66675" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.8335 1.66675V18.3334" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17.5002 12.5001V18.3334M17.5002 12.5001V1.66675C16.3951 1.66675 15.3353 2.10573 14.5539 2.88714C13.7725 3.66854 13.3335 4.72835 13.3335 5.83341V10.8334C13.3335 11.7501 14.0835 12.5001 15.0002 12.5001H17.5002Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Посуда
+          </a>
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_2448_81)">
+              <path d="M15.0003 9.16659V4.99992C15.0003 4.55789 14.8247 4.13397 14.5122 3.82141C14.1996 3.50885 13.7757 3.33325 13.3337 3.33325V3.33325C12.8916 3.33325 12.4677 3.50885 12.1551 3.82141C11.8426 4.13397 11.667 4.55789 11.667 4.99992V4.99992" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11.6663 8.33341V3.33341C11.6663 2.89139 11.4907 2.46746 11.1782 2.1549C10.8656 1.84234 10.4417 1.66675 9.99967 1.66675C9.55765 1.66675 9.13372 1.84234 8.82116 2.1549C8.5086 2.46746 8.33301 2.89139 8.33301 3.33341V5.00008" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.33333 8.74992V4.99992C8.33333 4.55789 8.15774 4.13397 7.84518 3.82141C7.53262 3.50885 7.10869 3.33325 6.66667 3.33325V3.33325C6.22464 3.33325 5.80072 3.50885 5.48816 3.82141C5.17559 4.13397 5 4.55789 5 4.99992V11.6666" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.0004 6.66667C15.0004 6.22464 15.176 5.80072 15.4886 5.48816C15.8011 5.17559 16.2251 5 16.6671 5C17.1091 5 17.533 5.17559 17.8456 5.48816C18.1582 5.80072 18.3337 6.22464 18.3337 6.66667V11.6667C18.3337 13.4348 17.6314 15.1305 16.3811 16.3807C15.1309 17.631 13.4352 18.3333 11.6671 18.3333H10.0004C7.66708 18.3333 6.25041 17.6167 5.00875 16.3833L2.00874 13.3833C1.72202 13.0658 1.5684 12.6501 1.57968 12.2225C1.59096 11.7948 1.76628 11.3878 2.06935 11.0858C2.37241 10.7838 2.78 10.6099 3.20772 10.6002C3.63545 10.5904 4.05055 10.7455 4.36708 11.0333L5.83374 12.5" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_2448_81">
+              <rect width="20" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+            Мастер-классы
+          </a>
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M13.3337 17.5V15.8333C13.3337 14.9493 12.9825 14.1014 12.3573 13.4763C11.7322 12.8512 10.8844 12.5 10.0003 12.5H5.00033C4.11627 12.5 3.26842 12.8512 2.6433 13.4763C2.01818 14.1014 1.66699 14.9493 1.66699 15.8333V17.5" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.50033 9.16667C9.34127 9.16667 10.8337 7.67428 10.8337 5.83333C10.8337 3.99238 9.34127 2.5 7.50033 2.5C5.65938 2.5 4.16699 3.99238 4.16699 5.83333C4.16699 7.67428 5.65938 9.16667 7.50033 9.16667Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.333 17.5001V15.8334C18.3325 15.0948 18.0866 14.3774 17.6341 13.7937C17.1817 13.2099 16.5481 12.793 15.833 12.6084" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.333 2.6084C14.05 2.79198 14.6855 3.20898 15.1394 3.79366C15.5932 4.37833 15.8395 5.09742 15.8395 5.83757C15.8395 6.57771 15.5932 7.2968 15.1394 7.88147C14.6855 8.46615 14.05 8.88315 13.333 9.06673" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Персонал 
+          </a>
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M14.1665 6.66675H14.9998C15.8839 6.66675 16.7317 7.01794 17.3569 7.64306C17.982 8.26818 18.3332 9.11603 18.3332 10.0001C18.3332 10.8841 17.982 11.732 17.3569 12.3571C16.7317 12.9822 15.8839 13.3334 14.9998 13.3334H14.1665" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.5 6.66675H14.1667V14.1667C14.1667 15.0508 13.8155 15.8986 13.1904 16.5238C12.5652 17.1489 11.7174 17.5001 10.8333 17.5001H5.83333C4.94928 17.5001 4.10143 17.1489 3.47631 16.5238C2.85119 15.8986 2.5 15.0508 2.5 14.1667V6.66675Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 1.66675V3.33341" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.3335 1.66675V3.33341" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11.6665 1.66675V3.33341" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Все для кейтеринга 
+          </a>
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M16.6669 13.3334V5.83341C16.6669 5.39139 16.4913 4.96746 16.1787 4.6549C15.8662 4.34234 15.4422 4.16675 15.0002 4.16675H5.00022C4.55819 4.16675 4.13427 4.34234 3.82171 4.6549C3.50915 4.96746 3.33355 5.39139 3.33355 5.83341V13.3334M16.6669 13.3334H3.33355M16.6669 13.3334L17.7336 15.4584C17.7978 15.5859 17.8282 15.7278 17.8219 15.8704C17.8156 16.013 17.7727 16.1516 17.6974 16.2729C17.6221 16.3942 17.5169 16.4941 17.3919 16.5631C17.2669 16.6321 17.1263 16.6677 16.9836 16.6667H3.01689C2.87413 16.6677 2.73351 16.6321 2.60851 16.5631C2.48351 16.4941 2.37832 16.3942 2.30303 16.2729C2.22775 16.1516 2.18488 16.013 2.17855 15.8704C2.17222 15.7278 2.20264 15.5859 2.26689 15.4584L3.33355 13.3334" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Техническое оборудование
+          </a>
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M12.0832 3.33325H7.9165L5.83317 5.83325H3.33317C2.89114 5.83325 2.46722 6.00885 2.15466 6.32141C1.8421 6.63397 1.6665 7.05789 1.6665 7.49992V14.9999C1.6665 15.4419 1.8421 15.8659 2.15466 16.1784C2.46722 16.491 2.89114 16.6666 3.33317 16.6666H16.6665C17.1085 16.6666 17.5325 16.491 17.845 16.1784C18.1576 15.8659 18.3332 15.4419 18.3332 14.9999V7.49992C18.3332 7.05789 18.1576 6.63397 17.845 6.32141C17.5325 6.00885 17.1085 5.83325 16.6665 5.83325H14.1665L12.0832 3.33325Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 13.3333C11.3807 13.3333 12.5 12.214 12.5 10.8333C12.5 9.45254 11.3807 8.33325 10 8.33325C8.61929 8.33325 7.5 9.45254 7.5 10.8333C7.5 12.214 8.61929 13.3333 10 13.3333Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Фотозоны
+          </a>
+          <a class="links__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_2448_1373)">
+              <path d="M4.83317 9.41675L1.6665 18.3334L10.5832 15.1751" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.3335 2.5H3.34183" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.3335 6.66675H18.3418" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.5 1.66675H12.5083" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.3335 16.6667H18.3418" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.3332 1.66675L16.4665 2.29175C15.9352 2.46874 15.4818 2.82478 15.1839 3.29902C14.8859 3.77325 14.762 4.33624 14.8332 4.89175V4.89175C14.9165 5.60841 14.3582 6.25008 13.6248 6.25008H13.3082C12.5915 6.25008 11.9748 6.75008 11.8415 7.45008L11.6665 8.33341" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.3332 10.8334L17.6498 10.5584C16.9332 10.275 16.1332 10.725 15.9998 11.4834C15.9082 12.0667 15.3998 12.5 14.8082 12.5H14.1665" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.16667 1.66675L9.44167 2.35008C9.725 3.06675 9.275 3.86675 8.51667 4.00008C7.93333 4.08341 7.5 4.60008 7.5 5.19175V5.83341" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.16644 10.8334C10.7748 12.4418 11.5248 14.3084 10.8331 15.0001C10.1414 15.6918 8.27477 14.9418 6.66644 13.3334C5.0581 11.7251 4.3081 9.85843 4.99977 9.16676C5.69144 8.4751 7.5581 9.2251 9.16644 10.8334Z" stroke="#6C70AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_2448_1373">
+              <rect width="20" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+            Тематические вечеринки
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+
+  </footer> 
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
